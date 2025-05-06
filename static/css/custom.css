@@ -1,0 +1,48 @@
+/* Minimal custom styles to complement Bootstrap */
+
+/* Loading overlay */
+#loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Audio player styling */
+.audio-controls {
+    padding: 10px 0;
+}
+
+/* Add a bit more breathing room */
+.container {
+    max-width: 900px;
+}
+
+/* Form button hover effect */
+#convert-btn:hover, #download-btn:hover {
+    transform: translateY(-2px);
+    transition: transform 0.2s;
+}
+
+/* Fade transitions */
+#audio-player-card, #error-message {
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Card elevation */
+.card {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
